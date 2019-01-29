@@ -15,7 +15,7 @@ scores = [0,0];
 roundScore = 0;
 activePlayer = 0;
 
-dice = Math.floor(Math.random()*6)+1;
+
 
 
 /******************
@@ -23,27 +23,38 @@ TWO WAYS OF DOM MANIPULATION :
 *******************/
 
 //1.
-document.querySelector('#current-' + activePlayer).textContent = dice;
-
+//document.querySelector('#current-' + activePlayer).textContent = dice; //SETTER
 //2.
 //document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
-
-
 //var x = document.querySelector('#score-0').textContent;  //GETTER 
 
 
 document.querySelector('.dice').style.display = 'none';
 
-
-
-//DONE TILL 48
-
+//TILL 48
 
 
 
+document.getElementById('score-0').textContent = '0';
+document.getElementById('score-1').textContent = '0';
+document.getElementById('current-0').textContent = '0';
+document.getElementById('current-1').textContent = '0';
 
 
 
+document.querySelector('.btn-roll').addEventListener('click', function(){
+//ANONYMOUS FUNCTION
+
+var dice = Math.floor(Math.random()*6) +1;
+
+var diceDOM = document.querySelector('.dice');
+diceDOM.style.display = 'block';
+diceDOM.src = 'dice-' + dice + '.png';
+
+});
+
+
+//TILL 49
 
 
 
