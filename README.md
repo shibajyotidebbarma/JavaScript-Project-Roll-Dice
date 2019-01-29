@@ -1,2 +1,3 @@
 # JavaScript-Project-Roll-Dice
-Game Project in JavaScript HTML5 and CSS3.
+
+![user interface](https://github.com/shibajyotidebbarma/JavaScript-Project-Roll-Dice/blob/master/ui.png "Project UI")
